@@ -1,5 +1,5 @@
-require './node.rb'
-require './linked_list.rb'
+require './data_structures/node.rb'
+require './data_structures/linked_list.rb'
 
 my_sexy_node = Node.new('hi')
 
@@ -18,7 +18,7 @@ my_sexy_linked_list.append_to_pos('buh', 0)
 my_sexy_linked_list.append_to_pos('fuh', 2)
 # my_sexy_linked_list.to_s
 my_sexy_linked_list.append_to_pos('luh', 4)
-my_sexy_linked_list.to_s
+# my_sexy_linked_list.to_s
 
 puts my_sexy_linked_list.get_node(4)
 puts my_sexy_linked_list.get_node(0)
