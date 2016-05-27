@@ -57,13 +57,17 @@ class LinkedList
 
   # get the value of a node at a position
   def get_node(position)
-    node = @head
+    if (@head)
+      node = @head
 
-    (0...position).each do
-      node = node.link
+      (0...position).each do
+        node = node.link
+      end
+
+      return node.value
+    else
+      return nil
     end
-
-    node.value
   end
 
   def set_node(value, position)
